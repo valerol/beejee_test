@@ -1,0 +1,207 @@
+/* Bootstrap fixes */
+
+input[type="checkbox"], input[type="radio"] {
+    margin: 0px;
+}
+
+/* Common */
+
+html,
+body {
+	height: 100%;
+}
+
+.page-wrap {
+	min-height: 100%;
+	margin-bottom: -90px;
+}
+
+.page-wrap:after {
+	content: "";
+	display: block;
+	height: 90px;
+}
+
+/* Header */
+
+header {
+    background-color: #dddddd;
+	padding: 20px 0;
+	margin-bottom: 20px;
+}
+
+.login {
+	text-align: right;
+	padding-right: 20px;
+	float: right;
+}
+
+@media screen and (min-width: 361px) { 
+    .login p {
+        display: inline;
+    }    
+}
+
+/* Footer */
+
+footer {
+	height: 70px;
+	padding: 20px;
+    background-color: #dddddd;
+	padding: 20px 0;
+}
+
+.footer-container {
+    margin-top: 20px;
+}
+
+/* Pages */
+
+.feedbacks {
+    margin: 20px 0;
+}
+
+.tools-top {
+    font-size: 0.85em;
+}
+
+a.sort-by {
+	border-bottom: 1px dashed;
+    cursor: pointer;
+	margin: 0 5px;
+    text-decoration: none;
+}
+
+.post-row {
+	margin-bottom: 5px;
+    background-color: #dddddd;
+	padding: 20px 0;
+}
+
+@media screen and (min-width: 361px) {     
+    .tools-top {
+        font-size: 1em;
+    }
+}
+
+/* View */
+
+.form {
+	background-color: #dddddd;
+	padding-left: 20px;
+}
+
+.form input {
+	margin-bottom: 15px;
+	padding: 5px;
+}
+
+.form input[type='text'],
+.form input[type='email'] {
+	margin-bottom: 15px;
+	padding: 5px;
+	width: 100%;
+}
+
+.form textarea {
+    width: 100%;
+    padding: 5px;
+}
+
+.prev,
+.feedback-back {
+	display: none;
+}
+
+#result {
+	padding: 10px;
+	display: none;
+}
+
+#result.error {
+	border: 1px solid red;
+}
+
+#result.success {
+	border: 1px solid green;
+}
+
+/* Edit */
+
+.form-edit {
+	margin-left: 20px;
+}
+
+.form-edit input {
+	margin-bottom: 15px;
+	padding: 5px;	
+}
+
+.form-edit textarea {
+	width: 100%;
+    padding: 5px;
+}
+
+a.back.glyphicon {
+	text-decoration: none;
+}
+
+a.back.glyphicon::before {
+	margin-right: 5px;
+}
+
+/* Moderate */
+
+.check-all {
+	margin-left: 5px;
+}
+
+a.edit:hover {
+	text-decoration: none;
+}
+
+.moderated_1 .content::after {
+     content: 'Изменен администратором';
+     display: block;
+	 color: red;
+}
+
+.tools-bottom {
+    font-size: 0.7em;
+}
+
+.glyphicon-edit::before {
+	margin-right: 5px;
+}
+
+.glyphicon-chevron-up,
+.glyphicon-chevron-down {
+	margin-left: 5px;
+}
+
+.glyphicon.status {
+	font-size: 1.5em;
+}
+
+.glyphicon-fire {
+	color: orange;	
+}
+
+.glyphicon-thumbs-up {
+	color: green;	
+}
+
+.glyphicon-thumbs-down {
+	color: red;	
+}
+
+@media screen and (min-width: 361px) { 
+    .tools-bottom {
+        font-size: 1em;
+    }
+
+    .tools-bottom input {
+        margin-top: 5px;
+        padding: 5px 10px;
+    }
+}
